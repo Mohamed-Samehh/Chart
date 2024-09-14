@@ -1,0 +1,29 @@
+<dx-chart
+  [dataSource]="chartData"
+  title="Instagram Post Picture Delay"
+  type="line"
+  [palette]="['#0CFF00']">
+  <dxi-series
+    argumentField="to"
+    valueField="SERV.Instagram Post Picture Delay (msec)"
+    name="Instagram Post Picture Delay">
+  </dxi-series>
+  <dxo-argument-axis
+    type="datetime"
+    [label]="{ format: 'MMM d, yyyy HH:mm' }">
+  </dxo-argument-axis>
+  <dxo-tooltip
+    enabled="true"
+    [format]="'fixedPoint'">
+  </dxo-tooltip>
+  <dxo-legend
+    [position]="'outside'"
+    [horizontalAlignment]="'center'"
+    [verticalAlignment]="'top'"
+    orientation="horizontal"
+    itemTextPosition="right"
+    [font]="{ size: 14 }"
+    [markerSize]="14"
+    [margin]="{ top: 20, bottom: 20 }">
+  </dxo-legend>
+</dx-chart>
